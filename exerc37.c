@@ -1,15 +1,13 @@
-/*
- * C Program to find whether a Number is Prime or Not using Recursion
- */
 #include <stdio.h>
  
-int primeno(int, int);
+int checaPrimo(int, int);
 
 int main()
 {
     int num, ehPrimo;
     printf("Entre com um numero: ");
     scanf("%d", &num);
+
     ehPrimo = primeno(num, num / 2);
     if (ehPrimo == 1)
     {
