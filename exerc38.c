@@ -23,8 +23,10 @@ int SomaRecursiva(int a, int b, int soma)
     if(a==b){
         return soma;
     }
+    
     if(a%2==0){
         soma += a;
     }
+
     return SomaRecursiva(a+1, b , soma);
 }
