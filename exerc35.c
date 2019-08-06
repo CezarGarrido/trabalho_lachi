@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc35.c
+Descrição: Calcula quantos elementos ímpares existe em um vetor .
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc35.exe exerc35.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int PercorreVetor(int vet[], int i, int n, int contador)
 {
@@ -40,3 +48,4 @@ int main(int argc, char *argv[])
 	
 	return 0;
 }
+

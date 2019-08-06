@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
+/*
+Programa: exerc29.c
+Descrição: Imprime as n primeiras linhas do triângulo de Pascal .
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc29.exe exerc29.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -49,3 +57,4 @@ int main (int argc, char *argv[])
 	
 	return 0;
 }
+			

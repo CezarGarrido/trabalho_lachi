@@ -1,4 +1,14 @@
-/* Gera todas as permutações */
+/*
+Programa: exerc13.c
+Descrição: 13. Fazer um programa para receber dois números do tipo unsigned int do usuário e determinar se um número é uma permutação do outro ou não. 
+
+Programador: Cezar Garrido Britez e Felipe de Melo Batalha
+RGM: 40101, 40093
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc13.exe exerc13.c -pedantic -Wextra -Wall
+
+*/
 
 #include <stdio.h>
 

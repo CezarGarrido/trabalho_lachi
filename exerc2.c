@@ -1,9 +1,24 @@
-#include <stdio.h>
-#include <string.h>//necessário para strlen
-#include <conio.h>
-#include <windows.h>
+/*
+Programa: exerc2.c
+Descrição: 2. Faça um programa que leia dois conjuntos de caracteres, s1 e s2. Depois, o seu programa deve centralizar s2 em relação a s1. Exemplo: s1 = “Nomes” e s2 = “Fábio Andre”. Resultado que o seu programa deve apresentar: 
+   Nomes
+Fábio André 
+Pode assumir que o número de caracteres q, tanto de s1 quanto de s2, será sempre um número na forma 2q – 1, com 1 ≤  q.
 
-//Função gotoxy
+Programador: Cezar Garrido Britez e Felipe de Melo Batalha
+RGM: 40101, 40093
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc2.exe exerc2.c -pedantic -Wextra -Wall
+
+*/
+
+#include <stdio.h>   /*printf(), scanf() */
+#include <string.h>  /*strlen() */
+#include <conio.h>   /*getchar() */
+#include <windows.h> /* SetConsoleCursorPosition, GetStdHandle() , STD_OUTPUT_HANDLE*/
+
+//Função gotoxy responsavel por setar as coordenadas no eixo x e y;
 void gotoxy(int x, int y)
 {
   COORD coord;

@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc14.c
+Descrição: Imprime na tela um triangulo composto por asteriscos de tamanho n.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc14.exe exerc14.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -10,15 +18,19 @@ int main (int argc, char *argv[])
 	argv = argv;
 	
 	scanf ("%d", &n_lin);
+	/* Define o numero de asteriscos que a base do triângulo deve conter.*/
 	n_col = n_lin + (n_lin - 1);
 	
+	/* Encontra o meio do triângulo.*/
 	aux1 = n_col / 2;
 	aux2 = aux1 + 2;
 	
+	/* Percorre as linhas e colunas para imprimir os asteriscos na tela.*/
 	for (l = 0; l < n_lin; l++)
 	{
 		for (c = 0; c < n_col; c++)
 		{
+			/* Define as posições em que os asteriscos devem ser impressos.*/
 			if (c > aux1 && c < aux2)
 				printf ("*");
 			else

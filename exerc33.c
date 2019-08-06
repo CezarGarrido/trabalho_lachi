@@ -27,7 +27,3 @@ int main(int argc, char *argv[], char *env[])
     return(0);
 }
 
-
-/*
-33. Faça um programa que verifique se o caminho para o compilador gcc já está incluído na variável de ambiente “path” (esse caminho será recebido pelo seu programa via linha de comando. Ex.: prog c:\Dev-cpp\bin) e, caso não esteja, deve ser incluído na variável de ambiente PATH. Dica: use um arquivo "batch" para que seja possível alterar a variável de ambiente PATH no contexto da janela do prompt de comando e o comanto SET.
-*/

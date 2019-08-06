@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc28.c
+Descrição: Verifica se a matriz informada é um quadrado mágico.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc28.exe exerc28.c -pedantic -Wextra -Wall
+
+*/
+
+#include <stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -64,8 +72,8 @@ int main (int argc, char *argv[])
 		soma += mat[l][c];
 		cont ++;
 	}
-	/* Verifica se a soma da diagonal principal é iguail a das colunas*/
 	
+	/* Verifica se a soma da diagonal principal é iguail a das colunas*/
 	if (soma != aux_soma)
 	{
 		printf ("\nA matriz nao e quadrado magico");
@@ -94,4 +102,5 @@ int main (int argc, char *argv[])
 	return 0;
 }
 	
-		
+			
+			

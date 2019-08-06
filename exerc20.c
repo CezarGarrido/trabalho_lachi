@@ -1,42 +1,42 @@
+/*
+Programa: exerc20.c
+Descrição: Calcula o número de triplas com valores iguais existentes na seqüência dada.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc20.exe exerc20.c -pedantic -Wextra -Wall
 
-#include <stdio.h>
+*/
 
-int main()
+#include<stdio.h> /* printf(), scanf()*/
+
+int main (int argc, char *argv[])
 {
-    int numeros[11], i, proximo = 0, cont=1, anterior, ehTripla = 1, temp=0;
+	int cont = 0, n, anterior, proximo, EhTripla = 0;
 
-    for (i = 0; i < 11; i++)
-    {
-        printf("Digite um numero maior ou igual a 3: ");
-        scanf("%d", &numeros[i]);
-    }
+	argc = argc;
+	argv = argv;
+	
+	printf ("Informe uma sequencia de valores inteiros\n");
+	printf ("Digite -1 para cancelar a sequencia\n");
+	
+	/* Le os valores informados pelo usuário.*/
+	while (n != -1)
+	{
+		scanf ("%d", &n);
+		
+		proximo = n;
+		/* Verifica e conta o número de triplas.*/
+		if (anterior == proximo)
+		{
+			cont ++;
+			if (cont >= 3)
+				EhTripla ++;
+		}
+		else
+			anterior = proximo;
 
-    for (i = 0; i < 11; i++) //4  2  15  15  15  3  7  7  7  7  2
-    {
-        proximo  = numeros[i];
-        if (proximo == anterior)
-        {
-            cont++;
-            if(cont==2){
-                temp = 1;
-            }
-            if(cont>=3){
-                 if(cont==3){
-                    ehTripla = 1;
-                 }
-                 ehTripla++;
-            }
-            printf("proximo: %d\n", proximo);
-            printf("anterior: %d\n", anterior);
-            printf("count: %d\n", cont);
-        }
-        anterior = proximo ;
-    }
-    ehTripla += temp;
-    printf("-> ehTripla %d\n", ehTripla);
-    if(ehTripla % 2 == 0){
-         printf("-> ehTripla Par: %d\n", ehTripla - 2);
-    }else{
-        printf("-> ehTripla Impar: %d\n", ehTripla - 2 );
-    }
+	}
+	printf ("numero de triplas = %d", EhTripla);
+	return 0;
 }

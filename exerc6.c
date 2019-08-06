@@ -1,16 +1,31 @@
+/*
+Programa: exerc6.c
+Descrição: 6. Faça um programa que troque todas as letras maiúsculas por minúsculas e as minúsculas por maiúsculas de uma string digitada pelo usuário.   
 
-#include <ctype.h>
-#include <stdio.h>
-#include <string.h>
+Programador: Cezar Garrido Britez e Felipe de Melo Batalha
+RGM: 40101, 40093
+Data da última modificação: 06/08/2019
 
-int main()
+Execução: gcc -o exerc6.exe exerc6.c -pedantic -Wextra -Wall
+
+*/
+
+
+#include <ctype.h> /*toupper() */
+#include <stdio.h> /*printf(), scanf(), putchar(), getchar() */
+#include <string.h> /*  */
+
+int main (int argc, char *argv[])
 {
    int i = 0;
    char str[100];
+   char *resultado;
    printf("Digite uma frase: ");
    scanf("%[^\n]s", &str); // todos os caracteres com exceção do \n
    getchar();
-   char *resultado;
+
+   argc = argc;
+	argv = argv;
    for (i; str[i] != '\0'; i++)
    {
       if (str[i] == ' ')

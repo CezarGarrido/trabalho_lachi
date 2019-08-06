@@ -1,5 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
+/*
+Programa: exerc22.c
+Descrição: Determa o comprimento de um segmento estritamente crescente.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc22.exe exerc22.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -31,4 +40,5 @@ int main (int argc, char *argv[])
 	}
 	return 0;
 }
-	
+			
+			

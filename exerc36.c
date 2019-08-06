@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc36.c
+Descrição: Calcula a soma dos dígitos de um inteiro positivo n lido.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc36.exe exerc36.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int SomaDigitos(int numero, int soma)
 {

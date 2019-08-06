@@ -1,6 +1,15 @@
-#include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
+/*
+Programa: exerc21.c
+Descrição: Converte valores da base 8 para base 10.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc21.exe exerc21.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
+#include<math.h> /* Operações matemáticas */
 
 int main (int argc, char *argv[])
 {
@@ -12,10 +21,13 @@ int main (int argc, char *argv[])
 	scanf ("%d", &n);
 	div = n;
 	
+	/* Separa os digitos do valor fornecido pelo usuário.*/
 	while (div != 0)
 	{
 		resto = div % 10;
 		div /= 10;
+		/* Verifica se o numero fornecido pelo usuário pertence a base octal.
+		 Se pertencer realiza a conversão*/
 		if (resto < 8)
 		{
 			mult = resto * pow(8, cont);

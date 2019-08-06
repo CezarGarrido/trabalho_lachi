@@ -1,5 +1,15 @@
-#include<stdio.h>
-#include<stdlib.h>
+/*
+Programa: exerc11.c
+Descrição: Determina quantos segmentos de números iguais consecutivos compõem a seqüência.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc11.exe exerc11.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -15,10 +25,12 @@ int main (int argc, char *argv[])
 	scanf ("%d", &valor1);
 	cont = 1;
 	
+	/* Faz a leitura de n valores digitados pelo usuário.*/
 	for (i = 1; i < n; i += 1)
 	{
 		scanf ("%d", &valor2);
 		
+		/* Verifica se o valor digitado anteriormente é igual ao atual.*/
 		if (valor1 != valor2)
 		{
 			cont += 1;

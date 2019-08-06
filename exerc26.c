@@ -1,6 +1,14 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc26.c
+Descrição: Imprime o número de linhas e o número de colunas nulas da matriz.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+Execução: gcc -o exerc26.exe exerc26.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -54,4 +62,5 @@ int main (int argc, char *argv[])
 	return 0;
 }
 	
-	
+			
+			

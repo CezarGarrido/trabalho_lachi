@@ -1,7 +1,22 @@
+/*
+Programa: exerc8.c
+Descrição: 8. Dados n e uma seqüência de n números inteiros, ambos lidos do usuário, determinar o comprimento de um segmento crescente de comprimento máximo. 
+Exemplos:
+Na seqüência  5, 10, 3, 2, 4, 7, 9, 8, 5 o comprimento do segmento crescente máximo é 4.
+Na seqüência  10, 8, 7, 5, 2  o comprimento de um segmento crescente máximo é 1.
+
+Programador: Cezar Garrido Britez e Felipe de Melo Batalha
+RGM: 40101, 40093
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc8.exe exerc8.c -pedantic -Wextra -Wall
+
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
-//
+
 int main (int argc, char *argv[])
 {
 	int n, valor1, valor2, i, cont, ant, comp=1, compmax=1;

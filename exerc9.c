@@ -1,6 +1,15 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc9.c
+Descrição: Indica na tela se a seqüência lida é balanceada ou não.
+Programador: Julio cesar Marquior
+RGM: 40101
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc9.exe exerc9.c -pedantic -Wextra -Wall
+
+*/
+
+#include<stdio.h> /* printf(), scanf()*/
 
 int main (int argc, char *argv[])
 {
@@ -8,7 +17,7 @@ int main (int argc, char *argv[])
 	
 	argc = argc;
 	argv = argv;
-	/*maior1 = maior2 = menor1 = menor2 = 0;*/
+	
 	printf ("Informe o tamanho do vetor\n");
 	scanf ("%d", &n);
 	
@@ -16,6 +25,7 @@ int main (int argc, char *argv[])
 	for (i = 0; i < n; i++)
 		scanf ("%d", &vetor[i]);
 	
+	/* Ordena o vetor de forma crescente.*/
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -28,9 +38,12 @@ int main (int argc, char *argv[])
 			}
 		}
 	}
+	
+	/* Faz a soma do primeiro(menor) e do ultimo(maior) elementos.*/
 	soma1 = vetor[i=0] + vetor[n-1];
 	n--;
 	
+	/* Soma os outros elementos e compara com a primeira soma.*/
 	for (j = 1; j < n; j++)
 	{
 		soma2 = vetor[j] + vetor[n-1];

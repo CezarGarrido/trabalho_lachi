@@ -1,6 +1,16 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+/*
+Programa: exerc4.c
+Descrição: 4. Faça um programa que leia um valor natural par n do usuário e utilize comandos for aninhados para mostrar na tela a seguinte figura (obs: não use gotoxy() para isso):  
+
+Programador: Cezar Garrido Britez e Felipe de Melo Batalha
+RGM: 40101, 40093
+Data da última modificação: 06/08/2019
+
+Execução: gcc -o exerc4.exe exerc4.c -pedantic -Wextra -Wall
+
+*/
+
+#include <stdio.h> /*printf(), scanf() */
 
 int main (int argc, char *argv[])
 {
